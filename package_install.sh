@@ -15,5 +15,10 @@ sudo pacman -U visual-studio-code-bin-*.pkg.tar.zst
 cd ../ && sudo rm -rfv visual-studio-code-bin
 
 # Downloading other necessary packages
-sudo pacman -S vlc nano
+sudo pacman -S vlc nano python-virtualenv gnome-music
+
+# Install Desktop Environment
+sudo pacman -S xorg xorg-server gnome gdm
+sudo systemctl enable gdm.service
+# sudo systemctl start gdm.service
 
