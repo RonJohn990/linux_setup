@@ -11,11 +11,9 @@ cd visual-studio-code-bin
 makepkg -s
 sudo pacman -U visual-studio-code-bin-*.pkg.tar.zst
 
+# clean up Downloads folder
+cd ../ && sudo rm -rfv visual-studio-code-bin
 
-
-
+# Downloading other necessary packages
 sudo pacman -S vlc nano
 
-
-clean up Downloads folder
-cd ../ && sudo rm -rfv visual-studio-code-bin
